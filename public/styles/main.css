@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  text-align: center;
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: grey;
+}
+
+form {
+  margin-top: 50px;
+}
+
+textarea {
+  line-height: 150%;
+}
+
+/* Style général du formulaire */
+.addForm {
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style des éléments de saisie */
+.addForm input[type="text"],
+.addForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* La taille totale comprend le padding et le border */
+}
+
+/* Style du bouton de soumission */
+.addForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol du bouton */
+.addForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style des cartes */
+.card {
+    width: calc(25% - 20px); /* Pour assurer que chaque carte occupe 25% de la largeur de son conteneur */
+    margin: 10px; /* Marge entre les cartes */
+    display: inline-block;
+    vertical-align: top; /* Aligner les cartes en haut de la ligne */
+}
+
+/* Pour assurer que chaque ligne contient quatre cartes */
+.card:nth-child(4n + 1) {
+    clear: left;
+}
+
+/* Ajouter du style à l'intérieur de la carte selon vos besoins */
+.card-header,
+.card-body,
+.card-footer {
+    /* Vos styles ici */
+}
