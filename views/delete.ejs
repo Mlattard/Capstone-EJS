@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+
+<form class="deleteForm" action="/delete/<%= postDelete.id %>" method="POST">
+    <div>
+        <p>Are you sure you want to delete post <%= postDelete.id %> ?</p>
+    </div>
+    <input type="submit" value="confirm">
+</form>
+
+<%- include("partials/footer.ejs") %>

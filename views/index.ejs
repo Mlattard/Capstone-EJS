@@ -5,16 +5,18 @@
     <% postsList.forEach(post => { %>
         <div class="card">
             <div class="card-header">
-                <%= post.title %>
+                <h3><%= post.title %></h3>
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <p><%= post.content %></p>
                     <footer class="blockquote-footer"><cite title="Source Title"><%= post.author %></cite></footer>
+                    <p class="text-body-secondary"><%= post.date %></p>
                 </blockquote>
             </div>
             <div class="card-footer text-body-secondary">
-                <%= post.date %>
+                <a class="nav-link" href="/update/<%= post.id %>">update</a>
+                <a class="nav-link" href="/delete/<%= post.id %>">delete</a>
             </div>
         </div>
     <% }) %>

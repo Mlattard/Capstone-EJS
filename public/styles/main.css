@@ -37,7 +37,8 @@ textarea {
 }
 
 /* Style général du formulaire */
-.addForm {
+.addForm,
+.updateForm{
     max-width: 500px; /* Largeur maximale du formulaire */
     margin: 0 auto; /* Centrer le formulaire horizontalement */
     padding: 20px;
@@ -48,7 +49,9 @@ textarea {
 
 /* Style des éléments de saisie */
 .addForm input[type="text"],
-.addForm textarea {
+.addForm textarea,
+.updateForm input[type="text"],
+.updateForm textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -58,7 +61,8 @@ textarea {
 }
 
 /* Style du bouton de soumission */
-.addForm input[type="submit"] {
+.addForm input[type="submit"],
+.update input[type="submit"] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -71,7 +75,8 @@ textarea {
 }
 
 /* Changement de couleur au survol du bouton */
-.addForm input[type="submit"]:hover {
+.addForm input[type="submit"]:hover,
+.updateForm input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
